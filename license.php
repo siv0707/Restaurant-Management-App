@@ -1,30 +1,15 @@
-<?php include 'includes/header.php'; ?>
 
-<?php 
+---
 
-	$sql	 = "SELECT * FROM tbl_license ORDER BY id DESC LIMIT 1";
-    $result  = mysqli_query($connect, $sql);
-    $data    = mysqli_fetch_assoc($result);
+### 💡 How to add this README file:
+1. Create a file named `README.md` in your project's root folder (alongside your PHP, SQL, Java files).  
+2. Paste the above content inside it and customize any parts (e.g. credentials, roadmap).  
+3. Commit and push the file:
+   ```bash
+   git add README.md
+   git commit -m "Add README with project overview"
+   git push origin main
 
-    if (isset($_POST['revoke_license'])) {
-		$sql_delete = "DELETE FROM tbl_license";
-   		$delete = mysqli_query($connect, $sql_delete);
-	   	if ($delete) {
-                $success =<<<EOF
-                    <script>
-                        alert('Your License has been revoked.');
-                        window.location = 'logout.php';
-                    </script>
-EOF;
-                echo $success;
-                exit;
-	   } else {
-	      echo "Error deleting record: " . mysqli_error($connect);
-	   }
-	   mysqli_close($connect);   		
-    }
-
-?>
 
 
 <!--content area start-->
