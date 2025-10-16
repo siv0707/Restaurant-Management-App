@@ -57,7 +57,7 @@ Log in with your admin credentials to explore dashboard, categories, and more
 
 📊 Build an analytics dashboard with charts for sales, order trends
 
-📲 Develop a Java desktop application for in-restaurant staff or POS
+📲 Develop a Java desktop application for in-restaurant staff or pos
 
 👤 Author & Contact
 Siva Surya
